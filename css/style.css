@@ -1,0 +1,125 @@
+:root {
+  --body-bg-1: #f9fafb;
+  --body-bg-2: #d2d6db;
+  --card-bg: #ffffff;
+
+  --link-color: #4338ca;
+
+  --neutral-900: #171717;
+  --neutral-600: #525252;
+
+  --badge-bg: #f0fdf4;
+  --badge-border: #bbf7d0;
+  --badge-text: #15803d;
+
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  background-image: linear-gradient(315deg, var(--body-bg-2), var(--body-bg-1));
+  min-height: 100vh;
+  overflow: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  background-color: var(--card-bg);
+  width: 340px;
+  margin: 120px auto;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px -1px;
+}
+
+.spacejoy-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 24px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-badge {
+  background-color: var(--badge-bg);
+  align-self: flex-start;
+  padding: 2px 8px;
+  border: 1px solid var(--badge-border);
+  border-radius: 9999px;
+  color: var(--badge-text);
+  font-size: 14px;
+}
+
+.card-title {
+  color: var(--neutral-900);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-description {
+  color: var(--neutral-600);
+  font-size: 16px;
+}
+
+.card-btn {
+  background-color: transparent;
+  display: flex;
+  gap: 6px;
+  border: none;
+  outline: none;
+  align-self: flex-start;
+  color: var(--link-color);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Credits */
+.credits {
+  color: #777;
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  font-size: 11px;
+  text-align: center;
+}
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
